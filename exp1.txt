@@ -1,0 +1,89 @@
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~
+$ git config --global user.name "Chiranthan248"
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~
+$ git config --global user.email "chiranthan112@gmail.com"
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~
+$ git init
+Initialized empty Git repository in C:/Users/Chiranthan N Gowda/.git/
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~ (master)
+$ echo "hello git">first.txt
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~ (master)
+$ git add first.txt
+warning: in the working copy of 'first.txt', LF will be replaced by CRLF the next time Git touches it
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~ (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 79ab3c2] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first.txt
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~ (master)
+$ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Documents/My Music/': Permission denied
+warning: could not open directory 'Documents/My Pictures/': Permission denied
+warning: could not open directory 'Documents/My Videos/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .arduinoIDE/
+        .cache/
+        .eclipse/
+        .gitconfig
+        .node_repl_history
+        .p2/
+        .python_history
+        .vscode/
+        AMDRM_Install.log
+        AppData/
+        Contacts/
+        Downloads/
+        Favorites/
+        Links/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TM.blf
+        NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TMContainer00000000000000000002.regtrans-ms
+        OneDrive/
+        Saved Games/
+        Searches/
+        Videos/
+        data_chi.csv
+        eclipse-workspace/
+        eclipse/
+        lol/
+        node_modules/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        package-lock.json
+        package.json
+        price-compare-backend/
+        price-compare-frontend/
+        project_dbms/
+        requirements.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~ (master)
+$ git log
+commit 79ab3c24a1cd86b14d1f0a47df68cc1e01b92e2a (HEAD -> master)
+Author: Chiranthan248 <chiranthan112@gmail.com>
+Date:   Fri May 30 10:31:47 2025 +0530
+
+    Initial commit

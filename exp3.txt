@@ -1,0 +1,48 @@
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git remote add origin https://github.com/Chiranthan248/git_experiments.git
+error: remote origin already exists.
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git pull origin main
+From https://github.com/Chiranthan248/git_experiments
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ nano first.txt
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git add first.txt
+warning: in the working copy of 'first.txt', LF will be replaced by CRLF the next time Git touches it
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git commit -m "Done"
+[main 9abc864] Done
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   second.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        main
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git log --oneline
+9abc864 (HEAD -> main) Done
+276f1a9 (origin/main, origin/HEAD) done
+8347d52 Done
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git merge origin/main
+Already up to date.

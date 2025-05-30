@@ -1,0 +1,39 @@
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git merge origin/main
+Already up to date.
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git branch new-feature
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git checkout new-feature
+M       second.txt
+Switched to branch 'new-feature'
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (new-feature)
+$ git switch main
+M       second.txt
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git merge new-feature
+Already up to date.
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git checkout new-feature
+M       second.txt
+Switched to branch 'new-feature'
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (new-feature)
+$ git add .
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (new-feature)
+$ git commit -m "work done"
+[new-feature aac73c9] work done
+ 2 files changed, 1 deletion(-)
+ create mode 100644 main
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (new-feature)
+$ git rebase main
+Current branch new-feature is up to date.

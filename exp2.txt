@@ -1,0 +1,57 @@
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~ (master)
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~ (master)
+$ cd..
+bash: cd..: command not found
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~ (master)
+$ cd git_experiments
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ echo "hello git">first.txt
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git add first.txt
+warning: in the working copy of 'first.txt', LF will be replaced by CRLF the next time Git touches it
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git commit -m "Done"
+[main (root-commit) 8347d52] Done
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first.txt
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Chiranthan248/git_experiments.git
+ * [new branch]      main -> main
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ echo "hello this is second file im pushing">second.txt
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git add second.txt
+warning: in the working copy of 'second.txt', LF will be replaced by CRLF the next time Git touches it
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git commit -m "done"
+[main 276f1a9] done
+ 1 file changed, 1 insertion(+)
+ create mode 100644 second.txt
+
+Chiranthan N Gowda@LAPTOP-8B5E2IE2 MINGW64 ~/git_experiments (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Chiranthan248/git_experiments.git
+   8347d52..276f1a9  main -> main
